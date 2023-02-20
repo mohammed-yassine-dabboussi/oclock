@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronomètre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<header>
+    <nav class="close" id="nav">
+        <burgerButton class="open" onclick="burgerSwitch(this.parentNode);"></burgerButton>
+            <ul>
+                <li><a href="index.html">Alarme</a></li>
+                <li><a href="chrono.html">Chronomètre</a></li>
+                <li><a href="minuteur.html">Minuteur</a></li>
+            </ul>
+    </nav>
+    <script>
+            function burgerSwitch(nav) {
+        if (nav.className == "open") {
+            nav.className = "close";
+        } else {
+            nav.className = "open";
+        }
+    }
+    </script>
+</header>
+
+<body>
+   
+    <div class="box">
+        <div class="wrapper">
+            <h1>Chronomètre</h1>
+            <h1 id="timer">00:00:00</h1>
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Tour</button>
+            <ul id="lap-list"></ul>
+        </div>
+</div>
+
+<script src="chrono.js"></script>
+
+</body>
+
+<footer> 
+    <div class="footer">
+        <p>© Mohammed Yassine Dabboussi | La Plateforme | 2022-2023</p>    
+    </div>
+</footer>
+
+</html>

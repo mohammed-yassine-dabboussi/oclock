@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="files/logo.png"/>
+        <title>Oclock</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header.css">
+    </head>
+<header>
+    <nav class="close" id="nav">
+        <burgerButton class="open" onclick="burgerSwitch(this.parentNode);"></burgerButton>
+            <ul>      
+                <li><a href="index.html">Alarme</a></li>
+                <li><a href="chrono.html">Chronomètre</a></li>
+                <li><a href="minuteur.html">Minuteur</a></li>
+            </ul>
+    </nav>    
+    <script>
+            function burgerSwitch(nav) {
+        if (nav.className == "open") {
+            nav.className = "close";
+        } else {
+            nav.className = "open";
+        }
+        }
+    </script>
+</header>
+
+<body>
+        <div class="box">
+            <div class="wrapper">
+                <h1>00:00:00 PM</h1>
+                    <div class="content disable">
+                        <div class=column>
+                            <select>
+                                <option value="Hour"selected hidden>Hour</option> 
+                            </select>
+                        </div>
+                        <div class=column>
+                            <select>
+                                <option value="Minute"selected hidden>Minute</option>
+                            </select>
+                        </div>
+                        <div class=column>
+                            <select>
+                                <option value="Hour"selected hidden>AM/PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button>Régler l'alarme</button>
+                    <button><a href="minuteur.html">Minuteur</a></button>
+                    <button><a href="chrono.html">Chronomètre</a></button>
+            </div>
+        </div>
+     
+<script src="script.js"></script> 
+
+</body>
+
+<footer> 
+    <div class="footer">
+        <p>© Mohammed Yassine Dabboussi | La Plateforme | 2022-2023</p>    
+    </div>
+</footer>
+
+</html>
